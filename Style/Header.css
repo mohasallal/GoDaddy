@@ -1,0 +1,173 @@
+:root {
+  --Cyan-Color: #00838c;
+  --Dark-Cyan-Color: #09757a;
+  --Light-Cyan-Color: #d8efef;
+  --Black-Color: #111111;
+  --Dark-Gray: #2b2b2b;
+  --White-Color: #ffffff;
+}
+
+/*Navigation*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--Dark-Gray);
+  padding: 10px 50px;
+  height: 50px;
+}
+
+nav svg {
+  fill: var(--White-Color);
+}
+
+.left__nav,
+.right__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Menu__icon {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Menu__icon svg {
+  width: 35px;
+  height: auto;
+}
+
+.logo {
+  width: 150px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.Mobile__logo {
+  display: none;
+  width: 50px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.Nav__Menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--White-Color);
+  list-style: none;
+  gap: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.right__nav {
+  gap: 10px;
+}
+
+.right__nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  list-style: none;
+  color: var(--White-Color);
+  margin: 0;
+  padding: 0;
+}
+
+.right__nav ul li,
+.Nav__Menu li {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.right__nav ul li:hover,
+.Nav__Menu li:hover,
+.Search__icon:hover {
+  background-color: #585858;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  cursor: pointer;
+}
+
+.Search__icon {
+  background-color: #444444;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.Search__icon svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Menu__icon,
+.User__icon,
+.Help__icon {
+  display: none;
+}
+/*End of Navigation*/
+
+@media screen and (max-width: 1690px) {
+  .Pricing__element {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1590px) {
+  .Airo__element {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1490px) {
+  .Menu__icon {
+    display: block;
+  }
+
+  .Nav__Menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    padding: 10px 10px;
+  }
+
+  .right__nav {
+    gap: 20px;
+  }
+
+  .right__nav ul {
+    display: none;
+  }
+
+  .User__icon,
+  .Help__icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    display: none;
+  }
+
+  .Mobile__logo {
+    display: block;
+  }
+
+  .right__nav {
+    gap: 20px;
+  }
+}
