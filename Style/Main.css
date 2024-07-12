@@ -8,6 +8,7 @@
   --White-Color: #ffffff;
   --Light-gray: #f5f5f5;
   --Blue-Color: #007dc5;
+  --purple-Color: #8c669e;
 }
 
 main {
@@ -109,15 +110,178 @@ main {
 }
 /*end of Top main Search*/
 
+/*Find AI Domain*/
+.Find__AI__dom {
+  margin-top: 25px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
 
+.Find__AI__left {
+  background: linear-gradient(90deg, #00000000, #000000),
+    url(../Images/pexels-cottonbro-5082579.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  height: auto;
+  aspect-ratio: 2/1;
+  border-radius: 20px;
+  color: white;
+  fill: var(--White-Color);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+}
 
+.notification {
+  background-color: var(--Light-gray);
+  color: var(--Black-Color);
+  padding: 5px;
+  font-size: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
 
+.Find__AI__left div {
+  width: 150px;
+}
 
-/* Query Top main Search*/
+.Find__AI__left h1 {
+  font-size: 4em;
+  width: 50%;
+  margin: 15px 0;
+}
+
+.Find__AI__left p {
+  width: 40%;
+  margin: 0;
+}
+
+.Find__AI__left button {
+  border: none;
+  background-color: var(--Black-Color);
+  color: var(--White-Color);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 25px;
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: translateX(10px);
+}
+
+.Btn__learn__More span {
+  transform: translateX(10px);
+}
+
+.Find__AI__left button:hover {
+  scale: 1.05;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.ArrowButton {
+  rotate: 180deg;
+  transform: translateX(-10px);
+  visibility: hidden;
+}
+
+.Find__AI__left button:hover > .ArrowButton {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  transform: translateX(0);
+  visibility: visible;
+  display: block;
+}
+
+.Find__AI__left button:hover > span {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  transform: translateX(0);
+}
+
+.Find__AI__right {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 0;
+  background-color: var(--Black-Color);
+  color: var(--White-Color);
+  border-radius: 20px;
+  height: auto;
+  padding: 10px;
+}
+
+.Find__AI__right span {
+  background-color: var(--purple-Color);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.Find__AI__right h2 {
+  font-size: 30px;
+}
+
+.Find__AI__right button {
+  border: none;
+  background-color: var(--White-Color);
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Btn__right__AI {
+  display: flex;
+  align-items: center;
+}
+
+.Btn__right__AI span {
+  background-color: var(--White-Color);
+}
+
+.Btn__right__AI svg {
+  fill: var(--Black-Color);
+  width: 24px;
+}
+
+.Find__AI__right button:hover {
+  scale: 1.05;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.Find__AI__right button:hover > .ArrowButton {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  transform: translateX(0);
+  visibility: visible;
+  display: block;
+}
+/*End of Find AI Domain*/
+
+/*Learn about*/
+
+/*end of learn about*/
+
 @media screen and (max-width: 1200px) {
   main {
-    padding: 10px 20px;
+    padding: 10px 15px;
   }
+
+  /* Query Top main Search*/
 
   .Search__TMRight {
     display: none;
@@ -126,9 +290,13 @@ main {
   .Search__TMLeft {
     width: 100%;
   }
+
+  /*End query of top main search*/
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
+  /* Query Top main Search*/
+
   .Search__TopMain {
     padding: 2px;
   }
@@ -152,6 +320,85 @@ main {
     display: block;
     fill: var(--White-Color);
   }
+  /*End query of top main search*/
+
+  /*Ai Domain section*/
+  .Find__AI__dom {
+    flex-direction: column;
+  }
+
+  .Find__AI__left {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .Find__AI__right {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+  }
+
+  /*end of ai domain section*/
 }
 
-/*End query of top main search*/
+@media screen and (max-width: 767px) {
+  /*Ai domain*/
+
+  .Find__AI__left {
+    background: linear-gradient(0deg, #00000000, #000000),
+      url(../Images/pexels-cottonbro-5082579.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    height: 600px;
+  }
+
+  .Find__AI__left h1 {
+    font-size: 24px;
+    width: 70%;
+  }
+
+  .Find__AI__left p {
+    width: 70%;
+    font-size: 14px;
+  }
+
+  .Btn__learn__More span {
+    transform: translateX(10px);
+  }
+
+  .Find__AI__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Find__AI__right div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: center;
+  }
+
+  .Find__AI__right button {
+    background-color: var(--Black-Color);
+    border: none;
+  }
+
+  .Btn__right__AI span {
+    display: none;
+  }
+
+  .Btn__right__AI svg {
+    width: 36px;
+    visibility: visible;
+    transform: translateX(0);
+    fill: var(--White-Color);
+  }
+  /*end of ai domain*/
+}
