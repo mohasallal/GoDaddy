@@ -430,6 +430,85 @@ main {
 }
 /*End of GoDaddy__Airo*/
 
+/*web Builder*/
+
+.GoDaddy__webBuilder {
+  width: 100%;
+  position: relative;
+}
+
+.GoDaddy__webBuilder h2 {
+  font-size: 35px;
+}
+
+.webBuilder__Image,
+.webBuilder__Image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.webBuilder__Image {
+  position: relative;
+  background-image: url(../Images/Raheim-Thompson-D.webp);
+  width: 100%;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 2/1;
+}
+
+.webBuilder__text {
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 600px;
+  height: 680px;
+  background-color: var(--White-Color);
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.webBuilder__text__bottom {
+  width: 250px;
+  height: 300px;
+  aspect-ratio: 1/2;
+}
+
+.webBuilder__img__corner {
+  position: absolute;
+  max-width: 350px;
+  bottom: 20px;
+  right: 20px;
+}
+
+.Lines__Container {
+  margin-top: 20px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+.Icon__Line {
+  padding: 8px;
+  border-radius: 10px;
+  background-color: var(--Light-Cyan-Color);
+}
+
+.Icon__Line svg {
+  fill: var(--Black-Color);
+}
+/*end of web Builder*/
+
 @media screen and (max-width: 1200px) {
   main {
     padding: 10px 15px;
@@ -574,7 +653,6 @@ main {
   }
 
   .cards__Airo {
-    border-radius: 20px;
     padding: 0;
     background-color: var(--Gray-Color);
     width: 80%;
@@ -596,11 +674,32 @@ main {
   .Airo__text {
     box-sizing: border-box;
     width: 100%;
-    padding: 10px 20px;
+    padding: 25px 20px;
     white-space: wrap;
   }
 
   /*End of GoDaddy Airo*/
+
+  /*webBuilder*/
+
+  .webBuilder__Image {
+    background-image: url(../Images/Raheim-Thompson-M.webp);
+    aspect-ratio: 1/1;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .webBuilder__text {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    box-sizing: border-box;
+    border-radius: 0;
+    inset: 0;
+    padding: 20px 10px;
+  }
+
+  /*end of WebBuilder*/
 }
 
 @media screen and (max-width: 767px) {
@@ -702,4 +801,11 @@ main {
   }
 
   /*end of Options*/
+
+  /*webBuilder*/
+
+  .webBuilder__img__corner {
+    display: none;
+  }
+  /*end of webBuilder*/
 }

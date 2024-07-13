@@ -15,6 +15,10 @@ body {
   padding: 0;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /*Buttons*/
 
 .Btn__learn__More {
