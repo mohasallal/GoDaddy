@@ -169,51 +169,6 @@ main {
   margin: 0;
 }
 
-.Find__AI__left button {
-  border: none;
-  background-color: var(--Black-Color);
-  color: var(--White-Color);
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 10px 25px;
-  font-size: 20px;
-  margin-top: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  transform: translateX(10px);
-}
-
-.Btn__learn__More span {
-  transform: translateX(10px);
-}
-
-.Find__AI__left button:hover {
-  scale: 1.05;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-out;
-}
-
-.ArrowButton {
-  rotate: 180deg;
-  transform: translateX(-10px);
-  visibility: hidden;
-}
-
-.Find__AI__left button:hover > .ArrowButton {
-  transition-duration: 0.2s;
-  transition-timing-function: ease-out;
-  transform: translateX(0);
-  visibility: visible;
-  display: block;
-}
-
-.Find__AI__left button:hover > span {
-  transition-duration: 0.2s;
-  transition-timing-function: ease-out;
-  transform: translateX(0);
-}
-
 .Find__AI__right {
   width: 25%;
   display: flex;
@@ -400,9 +355,80 @@ main {
 
 /*end of learn about*/
 
-/**/
+/*GoDaddy__Airo*/
 
-/**/
+.GoDaddy__Airo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.GoDaddy__Airo h2 {
+  font-size: 45px;
+  text-align: center;
+}
+
+.Airo__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.Airo__display {
+  height: auto;
+  width: 100%;
+  aspect-ratio: 3/1;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.Airo__display img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.Airo__under__display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.cards__Airo {
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.Mobile__Display__Airo {
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.Airo__under__display div:first-child {
+  background-color: var(--Gray-Color);
+}
+
+.Airo__under__display div:hover {
+  background-color: var(--Gray-Color);
+  cursor: pointer;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.Airo__under__display div h3 {
+  font-size: 24px;
+}
+
+.Mobile__Display__Airo {
+  display: none;
+}
+/*End of GoDaddy__Airo*/
 
 @media screen and (max-width: 1200px) {
   main {
@@ -524,6 +550,57 @@ main {
   }
 
   /*end of ai domain section*/
+
+  /*GoDaddy Airo*/
+
+  .Airo__display {
+    display: none;
+  }
+
+  .Airo__Wrapper,
+  .Airo__under__display {
+    white-space: nowrap;
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  .Airo__Wrapper {
+    position: relative;
+  }
+
+  .Airo__under__display {
+    padding: 0 15px;
+    overflow-x: auto;
+  }
+
+  .cards__Airo {
+    border-radius: 20px;
+    padding: 0;
+    background-color: var(--Gray-Color);
+    width: 80%;
+    flex-shrink: 0;
+  }
+
+  .Mobile__Display__Airo {
+    display: block;
+    padding: 0;
+  }
+
+  .Mobile__Display__Airo img {
+    aspect-ratio: 1096/824;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .Airo__text {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 20px;
+    white-space: wrap;
+  }
+
+  /*End of GoDaddy Airo*/
 }
 
 @media screen and (max-width: 767px) {

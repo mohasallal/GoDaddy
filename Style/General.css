@@ -17,6 +17,37 @@ body {
 
 /*Buttons*/
 
+.Btn__learn__More {
+  border: none;
+  background-color: var(--Black-Color);
+  color: var(--White-Color);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 25px;
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: translateX(10px);
+}
+
+.Btn__learn__More span {
+  transform: translateX(10px);
+}
+
+.Btn__learn__More:hover {
+  scale: 1.05;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.Btn__learn__More:hover > span {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  transform: translateX(0);
+}
+
 .BtnBlack {
   background-color: var(--Black-Color);
   color: var(--White-Color);
@@ -38,6 +69,21 @@ body {
 /*End of Buttons*/
 
 /*Arrow*/
+
+.ArrowButton {
+  rotate: 180deg;
+  transform: translateX(-15px);
+  visibility: hidden;
+}
+
+.Btn__learn__More:hover > .ArrowButton {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  transform: translateX(0);
+  visibility: visible;
+  display: block;
+}
+
 .black__arrow {
   margin: 0;
   rotate: 180deg;
