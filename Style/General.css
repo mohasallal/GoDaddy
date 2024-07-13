@@ -14,3 +14,40 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/*Buttons*/
+
+.BtnBlack {
+  background-color: var(--Black-Color);
+  color: var(--White-Color);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.BtnBlack:hover {
+  scale: 1.05;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  cursor: pointer;
+}
+
+/*End of Buttons*/
+
+/*Arrow*/
+.black__arrow {
+  margin: 0;
+  rotate: 180deg;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.corner {
+  align-self: flex-start;
+  justify-content: flex-start;
+}
+/**/
