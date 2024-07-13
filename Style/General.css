@@ -41,7 +41,7 @@ body {
 .black__arrow {
   margin: 0;
   rotate: 180deg;
-  display: flex;
+  display: none;
   justify-content: flex-end;
   align-items: center;
 }
@@ -51,3 +51,9 @@ body {
   justify-content: flex-start;
 }
 /**/
+
+@media screen and (max-width: 1024px) {
+  .black__arrow {
+    display: flex;
+  }
+}

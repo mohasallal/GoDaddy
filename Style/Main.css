@@ -285,18 +285,12 @@ main {
   text-align: center;
 }
 
-.scroll-container {
-  overflow-x: auto; /* Allows horizontal scrolling */
-  white-space: nowrap; /* Prevents line break and makes list items stay in a single line */
-}
-
 .Learn__more ul {
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  display: inline-flex;
   gap: 10px;
   list-style: none;
 }
@@ -305,7 +299,6 @@ main {
   padding: 10px 20px;
   border: 2px solid var(--Black-Color);
   border-radius: 50px;
-  flex-shrink: 0;
 }
 
 .Learn__more ul li:first-child {
@@ -407,6 +400,10 @@ main {
 
 /*end of learn about*/
 
+/**/
+
+/**/
+
 @media screen and (max-width: 1200px) {
   main {
     padding: 10px 15px;
@@ -442,6 +439,10 @@ main {
 
   .Options__left div {
     width: 50%;
+  }
+
+  .Options__left div h3 {
+    margin: 0;
   }
 
   .Options__right {
@@ -498,6 +499,13 @@ main {
     fill: var(--White-Color);
   }
   /*End query of top main search*/
+
+  /*Learn more*/
+  .Learn__more ul li {
+    font-size: 12px;
+  }
+
+  /*End of Learn more*/
 
   /*Ai Domain section*/
   .Find__AI__dom {
@@ -578,6 +586,23 @@ main {
     fill: var(--White-Color);
   }
   /*end of ai domain*/
+
+  /*Learn More*/
+
+  .scroll-container {
+    overflow-x: auto;
+    height: 65px;
+    white-space: nowrap;
+  }
+
+  .Learn__more ul {
+    display: inline-flex;
+  }
+
+  .Learn__more ul li {
+    flex-shrink: 0;
+  }
+  /*End fo learn more*/
 
   /*Options*/
 
