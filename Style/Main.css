@@ -13,11 +13,16 @@
 }
 
 main {
-  padding: 20px 100px;
+  padding: 20px 0;
 }
 
 .section {
   margin: 100px 0;
+  padding: 0 100px;
+}
+
+.section0 {
+  margin: 0;
 }
 
 /*Top main Search*/
@@ -509,6 +514,104 @@ main {
 }
 /*end of web Builder*/
 
+/*Why us*/
+.Why__Us {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why__us__heading {
+  text-align: center;
+}
+
+.why__us__heading h2 {
+  font-size: 40px;
+}
+
+.why__us__heading p {
+  font-size: 24px;
+}
+
+.why__us__body {
+  max-width: 1400px;
+  height: 100%;
+  width: 100%;
+  font-size: 35px;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 550px));
+  grid-template-rows: repeat(auto-fit, minmax(auto, 450px));
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.why__us__body img {
+  width: 50px;
+}
+
+.wubu1,
+.wubu2,
+.wubu3,
+.wubd1 {
+  height: 450px;
+  width: calc(100% - 100px);
+  padding: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.wubu1 {
+  background-image: url(../Images/img-hp-rtb-largest-registrar.webp);
+  color: var(--White-Color);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.wubu2 {
+  background-image: url(../Images/img-hp-rtb-security.webp);
+  color: var(--White-Color);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.wubu3,
+.wubd1 {
+  background-color: var(--Gray-Color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.wubd2 {
+  background-image: url(../Images/img-hp-rtb-tools-for-every-first-landscape.webp);
+  height: 450px;
+  width: calc(100% - 100px);
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.wubd2 p {
+  width: 40%;
+}
+
+/*end of why us*/
+
 @media screen and (max-width: 1200px) {
   main {
     padding: 10px 15px;
@@ -648,6 +751,7 @@ main {
   }
 
   .Airo__under__display {
+    box-sizing: border-box;
     padding: 0 15px;
     overflow-x: auto;
   }
@@ -682,6 +786,10 @@ main {
 
   /*webBuilder*/
 
+  .GoDaddy__webBuilder h2 {
+    font-size: 25px;
+  }
+
   .webBuilder__Image {
     background-image: url(../Images/Raheim-Thompson-M.webp);
     aspect-ratio: 1/1;
@@ -692,7 +800,7 @@ main {
   .webBuilder__text {
     position: relative;
     width: 100%;
-    height: 550px;
+    height: auto;
     box-sizing: border-box;
     border-radius: 0;
     inset: 0;
