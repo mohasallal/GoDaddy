@@ -163,6 +163,7 @@ main {
 }
 
 .Find__AI__left h1 {
+  font-family: serif;
   font-size: 4em;
   width: 50%;
   margin: 15px 0;
@@ -611,6 +612,7 @@ main {
 
 /*Banner*/
 .banner {
+  margin: 50px 0;
   width: 100%;
   height: 600px;
   background-position: center;
@@ -913,34 +915,11 @@ main {
   /*end of WebBuilder*/
 
   /*Banner*/
-  .banner {
-    padding: 0 15px;
-    background-image: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-  }
-
-  .banner div {
-    width: 100%;
-  }
-
-  .banner__mobile {
-    display: block;
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 20px;
-  }
 
   .banner__text__container {
-    padding: 30px;
-    box-sizing: border-box;
-    width: 100%;
-    position: relative;
-    left: 0;
+    left: 200px;
   }
+
   /*end of Banner*/
 }
 
@@ -968,7 +947,6 @@ main {
   }
 
   .Find__AI__left h1 {
-    font-family: serif;
     font-size: 40px;
     width: 70%;
   }
@@ -1076,6 +1054,38 @@ main {
   }
 
   /*end of why us*/
+
+  /*Banner*/
+  .banner {
+    padding: 0 15px;
+    height: auto;
+    background-image: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .banner div {
+    width: 100%;
+  }
+
+  .banner__mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .banner__text__container {
+    padding: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+  /*end of Banner*/
 
   /*FAQ*/
 

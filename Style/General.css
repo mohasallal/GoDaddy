@@ -3,10 +3,15 @@
 :root {
   --Cyan-Color: #00838c;
   --Dark-Cyan-Color: #09757a;
+  --Darker-Cyan-Color: #08585c;
   --Light-Cyan-Color: #d8efef;
   --Black-Color: #111111;
   --Dark-Gray: #2b2b2b;
   --White-Color: #ffffff;
+  --Light-gray: #f5f5f5;
+  --Gray-Color: #e8eaeb;
+  --Blue-Color: #007dc5;
+  --purple-Color: #8c669e;
 }
 
 body {
