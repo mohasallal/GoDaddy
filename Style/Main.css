@@ -468,7 +468,7 @@ main {
   position: absolute;
   right: 10px;
   bottom: 10px;
-  width: 600px;
+  width: 550px;
   height: 680px;
   background-color: var(--White-Color);
   border-radius: 20px;
@@ -536,13 +536,12 @@ main {
 
 .why__us__body {
   max-width: 1400px;
-  height: 100%;
+  height: auto;
   width: 100%;
   font-size: 35px;
   font-weight: bold;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1fr, 550px));
-  grid-template-rows: repeat(auto-fit, minmax(auto, 450px));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   align-items: center;
   justify-content: space-between;
@@ -556,7 +555,8 @@ main {
 .wubu2,
 .wubu3,
 .wubd1 {
-  height: 450px;
+  max-height: 450px;
+  height: calc(100% - 100px);
   width: calc(100% - 100px);
   padding: 50px;
   background-position: center;
@@ -592,10 +592,8 @@ main {
 
 .wubd2 {
   background-image: url(../Images/img-hp-rtb-tools-for-every-first-landscape.webp);
-  height: 450px;
-  width: calc(100% - 100px);
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column: span 2;
+  height: calc(100% - 100px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -612,9 +610,96 @@ main {
 
 /*end of why us*/
 
+/*Banner*/
+.banner {
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../Images/mrq-Guide-CA-Olivia-desktop.webp);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__mobile {
+  display: none;
+}
+
+.banner__text__container {
+  width: 400px;
+  position: relative;
+  left: 250px;
+}
+
+.banner__text__container h2 {
+  font-size: 40px;
+}
+
+.banner__logo img {
+  width: 200px;
+}
+/*end of Banner*/
+
+/*FAQ*/
+
+.FAQ {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.FAQ__heading h2 {
+  text-align: center;
+  font-size: 40px;
+  max-width: 500px;
+}
+
+.FAQ__heading h3 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.FAQ__body {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.FAQ__body h3 {
+  font-size: 24px;
+}
+
+.FAQ__line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--Gray-Color);
+}
+
+.FAQ__answer {
+  padding: 10px 0 20px 0;
+  display: none;
+}
+/*end of FAQ*/
+
+@media screen and (max-width: 1450px) {
+  /*why us*/
+  .why__us__body {
+    font-size: 30px;
+  }
+  /*end of why us*/
+}
+
 @media screen and (max-width: 1200px) {
   main {
     padding: 10px 15px;
+  }
+
+  .section {
+    padding: 0 50px;
   }
 
   /* Query Top main Search*/
@@ -628,6 +713,20 @@ main {
   }
 
   /*End query of top main search*/
+
+  /*why us*/
+
+  .why__us__body {
+    font-size: 20px;
+  }
+
+  .why__us__body div {
+    padding: 20px;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    max-height: 300px;
+  }
+  /*end of why us*/
 }
 
 @media screen and (max-width: 1024px) {
@@ -681,6 +780,10 @@ main {
 }
 
 @media screen and (max-width: 991px) {
+  .section {
+    padding: 0 50px;
+  }
+
   /* Query Top main Search*/
 
   .Search__TopMain {
@@ -808,9 +911,48 @@ main {
   }
 
   /*end of WebBuilder*/
+
+  /*Banner*/
+  .banner {
+    padding: 0 15px;
+    background-image: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .banner div {
+    width: 100%;
+  }
+
+  .banner__mobile {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .banner__text__container {
+    padding: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+  /*end of Banner*/
 }
 
 @media screen and (max-width: 767px) {
+  .section {
+    padding: 0 10px;
+    margin: 50px 0;
+  }
+
+  .section0 {
+    margin: 0;
+  }
   /*Ai domain*/
 
   .Find__AI__left {
@@ -916,4 +1058,37 @@ main {
     display: none;
   }
   /*end of webBuilder*/
+
+  /*why us*/
+
+  .why__us__body {
+    grid-template-columns: repeat(1, 1fr);
+    aspect-ratio: auto;
+  }
+
+  .why__us__body div {
+    height: 300px;
+    font-size: 24px;
+  }
+
+  .wubd2 {
+    grid-column: 1 span;
+  }
+
+  /*end of why us*/
+
+  /*FAQ*/
+
+  .FAQ__heading h2 {
+    font-size: 30px;
+  }
+
+  .FAQ__heading h3 {
+    font-size: 20px;
+  }
+
+  .FAQ__line h3 {
+    font-size: 16px;
+  }
+  /*end of FAQ*/
 }
