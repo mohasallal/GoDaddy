@@ -131,8 +131,7 @@ main {
 }
 
 .Find__AI__left {
-  background: linear-gradient(90deg, #00000000, #000000),
-    url(../Images/pexels-cottonbro-5082579.jpg);
+  background: url(../Images/mrq-hp-airo-landscape.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -140,8 +139,8 @@ main {
   height: auto;
   aspect-ratio: 2/1;
   border-radius: 20px;
-  color: white;
-  fill: var(--White-Color);
+  color: var(--Black-Color);
+  fill: var(--Black-Color);
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -883,6 +882,7 @@ main {
     width: 100%;
     padding: 25px 20px;
     white-space: wrap;
+    border-radius: 20px;
   }
 
   /*End of GoDaddy Airo*/
@@ -956,20 +956,20 @@ main {
   /*Ai domain*/
 
   .Find__AI__left {
-    background: linear-gradient(0deg, #00000000, #000000),
-      url(../Images/pexels-cottonbro-5082579.jpg);
-    background-position: center;
+    background: url(../Images/mrq-hp-airo-portrait.webp);
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    height: 600px;
+    height: 800px;
   }
 
   .Find__AI__left h1 {
-    font-size: 24px;
+    font-family: serif;
+    font-size: 40px;
     width: 70%;
   }
 
@@ -1047,7 +1047,7 @@ main {
 
   .Right__down h3,
   .Right__up h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   /*end of Options*/
@@ -1091,4 +1091,14 @@ main {
     font-size: 16px;
   }
   /*end of FAQ*/
+}
+
+@media screen and (max-width: 435px) {
+  .options__learn__more {
+    padding: 0;
+  }
+
+  .Options__right h3 {
+    font-size: 12px;
+  }
 }

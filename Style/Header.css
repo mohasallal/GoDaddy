@@ -166,8 +166,18 @@ nav svg {
   .Mobile__logo {
     display: block;
   }
+}
+
+@media screen and (max-width: 375px) {
+  nav {
+    padding: 10px 5px;
+  }
+
+  .Mobile__logo {
+    width: 40px;
+  }
 
   .right__nav {
-    gap: 20px;
+    gap: 15px;
   }
 }
