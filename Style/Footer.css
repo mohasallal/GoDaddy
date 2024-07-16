@@ -14,11 +14,11 @@
 
 footer {
   background-color: var(--Black-Color);
-  padding: 0 100px;
   color: var(--White-Color);
 }
 
 .Upper__footer {
+  padding: 0 100px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -52,18 +52,91 @@ footer {
   display: none;
 }
 
+/*Lower Footer*/
+
+.lower__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 100px;
+  border-bottom: 2px solid var(--White-Color);
+}
+
+.logo__container__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.logo__footer svg {
+  fill: var(--White-Color);
+  width: 200px;
+}
+
+.footer__social__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bottom__footerOne,
+.bottom__footerTwo {
+  font-size: 14px;
+  gap: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.bottom__footerOne p,
+.bottom__footerTwo p {
+  margin: 0;
+}
+
+.Full_Width {
+  width: 300px;
+}
+
+.small__footer__mobile {
+  padding: 30px 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.Currency__footer__mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer__social__media__mobile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/*end of Lower Footer*/
+
 @media screen and (max-width: 1200px) {
   footer {
     padding: 0 10px;
   }
   .Upper__footer {
     gap: 25px;
+    align-items: normal;
   }
 
   .left__ftr,
   .mid__ftr,
   .right__ftr {
     gap: 25px;
+    width: 100%;
   }
 }
 
@@ -73,6 +146,21 @@ footer {
     align-items: center;
     gap: 20px;
     padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .lower__footer {
+    padding: 5px 10px;
+  }
+
+  .small__footer__mobile {
+    display: flex;
+  }
+
+  .Currency__footer,
+  .footer__social__media {
+    display: none;
   }
 }
 
@@ -102,5 +190,20 @@ footer {
 
   .footer__line img {
     display: block;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .bottom__footerOne,
+  .bottom__footerTwo {
+    flex-direction: column-reverse;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Full_Width {
+    width: auto;
   }
 }
